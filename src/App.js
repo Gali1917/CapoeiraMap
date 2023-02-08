@@ -13,7 +13,10 @@ function App() {
       <content className="content">
 
         <Menu />
+        <div className='box-map'>
+
         <MapView />
+        </div>
       </content>
       <footer>
         <Footer/>

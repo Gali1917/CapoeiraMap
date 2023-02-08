@@ -1,4 +1,9 @@
 .mapa{
     border: 1xp solid black;
     margin-top: 16px;
+    height: 100%;
+
+}
+.box-map{
+    height: 100%;
 }
