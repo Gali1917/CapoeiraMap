@@ -1,9 +1,17 @@
 .mapa{
     border: 1xp solid black;
-    margin-top: 16px;
     height: 100%;
 
 }
 .box-map{
     height: 100%;
+    border: 1px solid black;
+}
+
+.popup-mapa{
+    display: flex;
+    flex-wrap: wrap;
+}
+.popup-mapa img{
+    width: 100px;
 }
