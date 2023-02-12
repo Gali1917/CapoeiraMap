@@ -12,17 +12,15 @@ function App() {
     <div className='container'>
       <header>
         <h1>
-          ENCUENTRA TU CAPOEIRA DONDE ESTES!
+          CAPOEIRA FIND!
         </h1>
       </header>
       <main>
-        <Link to="/nuevo-pin">Nuevo Marcador</Link>
         <Routes>
           <Route path="/" element={<Menu />}/>
           {/* <Route path="/" element={<MapView />}/> */}
           <Route path="/nuevo-pin" element={<NuevoPin/>}/>
         </Routes>
-        <MapView/>
       </main>
       <footer>
         <p>

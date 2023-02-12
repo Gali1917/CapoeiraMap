@@ -4,7 +4,7 @@ import "../../styles/mapView.css";
 
 const MapView = () => {
   return (
-    <main>
+    <div>
 
       <MapContainer className="mapa" center={[4.7350214, -74.1071767]} zoom={17} scrollWheelZoom={false}>
         <TileLayer
@@ -24,7 +24,7 @@ const MapView = () => {
           </Popup>
         </Marker>
       </MapContainer>
-    </main>
+    </div>
   );
 }
 
