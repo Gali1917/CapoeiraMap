@@ -12,6 +12,8 @@ const Menu = () => {
     <div>
       <aside>
         <Link to="/nuevo-pin" className="boton-primario">Nuevo Marcador</Link>
+        <Link to="/data" className="boton-primario">Ver datos registrados</Link>
+
         <div className="menu-text">
           <p>Buscan el punto mas cercano a tu posicion</p>
           <p>Da click para ver su horario</p>

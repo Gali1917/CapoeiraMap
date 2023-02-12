@@ -4,6 +4,7 @@ import './App.css';
 import Menu from './pages/IndexPage/Menu';
 import MapView from './pages/IndexPage/MapView';
 import NuevoPin from './pages/pines/NuevoPin';
+import Data from './pages/IndexPage/Data';
 import { Routes, Route, Link } from 'react-router-dom';
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Menu />}/>
           {/* <Route path="/" element={<MapView />}/> */}
           <Route path="/nuevo-pin" element={<NuevoPin/>}/>
+          <Route path="/data" element={<Data/>}/>
         </Routes>
       </main>
       <footer>
