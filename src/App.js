@@ -6,6 +6,7 @@ import MapView from './pages/IndexPage/MapView';
 import NuevoPin from './pages/pines/NuevoPin';
 import { Routes, Route, Link } from 'react-router-dom';
 
+
 function App() {
   return (
     <div className='container'>
@@ -15,6 +16,7 @@ function App() {
         </h1>
       </header>
       <main>
+        <Link to="/nuevo-pin">Nuevo Marcador</Link>
         <Routes>
           <Route path="/" element={<Menu />}/>
           {/* <Route path="/" element={<MapView />}/> */}
