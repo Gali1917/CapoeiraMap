@@ -1,11 +1,12 @@
 import React from "react";
-import "../styles/menu.css";
+import "../../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlassLocation } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
     return (
-        <div>
+        <main>
             <aside>
                 <p>Buscan el punto mas cercano a tu posicion</p>
                 <p>Da click para ver su horario</p>
@@ -15,9 +16,9 @@ const Menu = () => {
 
                 <FontAwesomeIcon icon={faMagnifyingGlassLocation} />
                 </a>
-
+                {/* <Link  */}
             </aside>
-        </div>
+        </main>
     );
 }
 

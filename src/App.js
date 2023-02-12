@@ -1,25 +1,31 @@
-import { Map, Marker, Popup, TileLayer } from 'leaflet';
+import { MapContainer, Marker, Popup, TileLayer } from 'leaflet';
 import { Icon } from 'leaflet';
 import './App.css';
-import Menu from './components/Menu';
-import MapView from './components/MapView';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Menu from './pages/IndexPage/Menu';
+import MapView from './pages/IndexPage/MapView';
+import NuevoPin from './pages/pines/NuevoPin';
+import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="container">
-      <Header />
-      <content className="content">
-
-        <Menu />
-        <div className='box-map'>
-
-        <MapView />
-        </div>
-      </content>
+    <div className='container'>
+      <header>
+        <h1>
+          ENCUENTRA TU CAPOEIRA DONDE ESTES!
+        </h1>
+      </header>
+      <main>
+        <Routes>
+          <Route path="/" element={<Menu />}/>
+          {/* <Route path="/" element={<MapView />}/> */}
+          <Route path="/nuevo-pin" element={<NuevoPin/>}/>
+        </Routes>
+        <MapView/>
+      </main>
       <footer>
-        <Footer/>
+        <p>
+          2023
+        </p>
       </footer>
     </div>
   );

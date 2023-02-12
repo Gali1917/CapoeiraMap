@@ -1,0 +1,16 @@
+form{
+    background-color: black;
+    width: 320px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.label-input{
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+.descripcion textarea{
+    height: 80px;
+    width: 170px;
+
+}
